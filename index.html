@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Pointed Star</title>
+    <style>
+        .six {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: solid 80px transparent;
+            border-right: solid 80px transparent;
+            border-bottom: solid 160px salmon;
+        }
+        .six::after{
+            position: absolute;
+            width: 0;
+            height: 0;
+            content: '';
+            top: 50px;
+            left: -80px;
+            border-left: solid 80px transparent;
+            border-right: solid 80px transparent;
+            border-bottom: solid 160px salmon;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="six"></div>
+</body>
+</html>
